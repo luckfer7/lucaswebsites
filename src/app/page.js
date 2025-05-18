@@ -1,103 +1,54 @@
+import Container from "@/componentes/Container";
+import Paragraph from "@/componentes/Paragraph";
+import Section from "@/componentes/Section";
+import TitleTwo from "@/componentes/Title-secondary";
+import TitleFour from "@/componentes/TitleFour";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div>
+      <Section className=" border border-4 h-screen px-40 py-60">
+        <Container className=" border border-2 flex ">
+          <Container>
+            <TitleTwo>
+              Seu negócio pode estar perdendo clientes sem você perceber
+            </TitleTwo>
+            <Paragraph>Garanta uma presença online de alto nível com um site rápido, atrativo e otimizado para converter visitantes e clientes</Paragraph>
+            <button className="bg-blue-600 text-white font-semibold px-4 py-2 rounded hover:bg-blue-700 transition cursor-pointer" >
+              fazer orçamento gratuito
+            </button>
+          </Container>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <Container className="border-2">
+            <Image className="border-2" alt="imagem que eu colocar"/>
+          </Container>
+
+        </Container>
+      </Section>
+
+      <Section className="border border-4 h-screen px-40 py-60">
+        <TitleTwo>Presença digital que gera resultados</TitleTwo>
+        <Paragraph>Se sua empresa não está no digital de forma correta, seus concorrentes estão lucranco  no seu lugar! Eu desenvolvo sites que resolvem isso pra você.</Paragraph>
+        <Container className="border-2 flex gap-3 p-4">
+          <Container className="border-2 p-7">
+            <TitleFour>Mais credibilidade</TitleFour>
+            <Paragraph>Seu negócio passa mais confiança e profissionalismo com um site bem estruturado, transmitindo segurança para seus clientes e aumentando suas chances de conversão.</Paragraph>
+          </Container>
+          <Container className="border-2 p-7">
+            <TitleFour>Mais clientes</TitleFour>
+            <Paragraph>Um site estratégico atrai visitantes qualificados e os transforma em clientes, funcionando 24 horas por dia para gerar mais oportunidades para o seu negócio.</Paragraph>
+          </Container>
+          <Container className="border-2 p-7">
+            <TitleFour>Destaque digital</TitleFour>
+            <Paragraph>com um site profissional, você supera a concorrencia, fortalece sua marca no digital e garante que sua empresa seja encontrada pelos clientes certos.</Paragraph>
+          </Container>
+          <Container className="border-2 p-7">
+            <TitleFour>Atendimento rápido</TitleFour>
+            <Paragraph>Integre seu site ao seu WhatsApp ou outra redes sociais, tornando a comunicação mais ágil e eficiente, sem perder nenhuma oportunidade de venda.</Paragraph>
+          </Container>
+        </Container>
+      </Section>
     </div>
   );
 }
