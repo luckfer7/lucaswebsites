@@ -3,26 +3,28 @@ import Paragraph from "@/componentes/Paragraph";
 import Section from "@/componentes/Section";
 import TitleTwo from "@/componentes/Title-secondary";
 import TitleFour from "@/componentes/TitleFour";
+import { BsCheckCircleFill } from "react-icons/bs"
 import Image from "next/image";
+import Link from "next/link";
+import website from "../../public/pagina-inicial-vista-na-tela-do-computador.png"
 
 export default function Home() {
   return (
     <div>
-      <Section className=" border border-4 h-screen px-40 py-60">
-        <Container className=" border border-2 flex ">
-          <Container>
-            <TitleTwo>
+      <Section className=" border border-4 h-screen flex justify-center items-center ">
+        <Container className=" flex max-w-[80%] ">
+          <Container className=" flex flex-col gap-4 justify-center">
+            <TitleTwo className="text-3xl font-semibold ">
               Seu negócio pode estar perdendo clientes sem você perceber
             </TitleTwo>
             <Paragraph>Garanta uma presença online de alto nível com um site rápido, atrativo e otimizado para converter visitantes e clientes</Paragraph>
-            <button className="bg-blue-600 text-white font-semibold px-4 py-2 rounded hover:bg-blue-700 transition cursor-pointer" >
+            <button className="bg-blue-600 text-white font-semibold px-4 py-2 rounded hover:bg-blue-700 transition cursor-pointer w-[70%]" >
               fazer orçamento gratuito
             </button>
           </Container>
 
-          <Container className="border-2">
-            <Image className="border-2" alt="imagem que eu colocar"/>
-          </Container>
+            <Image src={website} className="border-2 w-[55%]"  alt="imagem que eu colocar"/>
+
 
         </Container>
       </Section>
@@ -49,6 +51,51 @@ export default function Home() {
           </Container>
         </Container>
       </Section>
+
+      <Section className="border border-4 h-screen flex justify-center items-center flex-col" >
+        <TitleTwo>Meus serviços</TitleTwo>
+        <Container className="flex p-2 gap-2 items-center">
+          <BsCheckCircleFill /> <TitleFour>Sites institucionais</TitleFour>
+        </Container>
+        <Container className="flex p-2 gap-2 items-center">
+          <BsCheckCircleFill /> <TitleFour>Landing pagess</TitleFour>
+        </Container>
+        <Container className="flex p-2 gap-2 items-center">
+          <BsCheckCircleFill /> <TitleFour>Portfólios</TitleFour>
+        </Container>
+        <Container className="flex p-2 gap-2 items-center">
+          <BsCheckCircleFill /> <TitleFour>E-commerce</TitleFour>
+        </Container>
+        <Container className="flex p-2 gap-2 items-center">
+          <BsCheckCircleFill /> <TitleFour>Blogs profissionais</TitleFour>
+        </Container>
+      </Section>
+
+      <Section className="border border-4 h-screen flex justify-center items-center flex-col" >
+        <TitleTwo>Benefícios para o cliente</TitleTwo>
+        <Container className="flex p-2 gap-2 items-center">
+          <BsCheckCircleFill /> <TitleFour>Site responsivo para todos os dispositivos</TitleFour>
+        </Container>
+        <Container className="flex p-2 gap-2 items-center">
+          <BsCheckCircleFill /> <TitleFour>Velocidade e SEO</TitleFour>
+        </Container>
+        <Container className="flex p-2 gap-2 items-center">
+          <BsCheckCircleFill /> <TitleFour>Design personalizado</TitleFour>
+        </Container>
+        <Container className="flex p-2 gap-2 items-center">
+          <BsCheckCircleFill /> <TitleFour>Suporte e manutenção</TitleFour>
+        </Container>
+        <Container className="flex p-2 gap-2 items-center">
+          <BsCheckCircleFill /> <TitleFour>Integração com redes sociais, WhatsApp, etc.</TitleFour>
+        </Container>
+      </Section>
+
+      <Section className="h-screen" >
+        <TitleTwo>Vamos criar o seu site dos sonhos?</TitleTwo>
+        <Link href="/">QUERO MEU SITE!</Link> 
+      </Section>
+
+
     </div>
   );
 }
