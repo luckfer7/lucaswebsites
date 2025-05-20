@@ -12,13 +12,13 @@ export default function Home() {
   return (
     <div>
       <Section className=" border border-4 h-screen flex justify-center items-center ">
-        <Container className=" flex max-w-[80%] ">
+        <Container className=" flex max-w-[80%] shadow-md shadow-[#6c4a99] rounded-md p-8 ">
           <Container className=" flex flex-col gap-4 justify-center">
             <TitleTwo className="text-3xl font-semibold ">
-              Seu negócio pode estar perdendo clientes sem você perceber
+              Seu negócio pode estar perdendo <span className="text-[#ba93e9]" >clientes sem você perceber</span>
             </TitleTwo>
-            <Paragraph>Garanta uma presença online de alto nível com um site rápido, atrativo e otimizado para converter visitantes e clientes</Paragraph>
-            <button className="bg-blue-600 text-white font-semibold px-4 py-2 rounded hover:bg-blue-700 transition cursor-pointer w-[70%]" >
+            <Paragraph className=" text-base ">Garanta uma presença online de alto nível com um site rápido, atrativo e otimizado para converter visitantes e clientes</Paragraph>
+            <button className="bg-[#7046a8] text-white font-semibold px-4 py-2 rounded hover:bg-[#a47ed2] transition cursor-pointer w-[70%]" >
               fazer orçamento gratuito
             </button>
           </Container>
@@ -29,64 +29,65 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section className="border border-4 h-screen px-40 py-60">
-        <TitleTwo>Presença digital que gera resultados</TitleTwo>
-        <Paragraph>Se sua empresa não está no digital de forma correta, seus concorrentes estão lucranco  no seu lugar! Eu desenvolvo sites que resolvem isso pra você.</Paragraph>
-        <Container className="border-2 flex gap-3 p-4">
-          <Container className="border-2 p-7">
-            <TitleFour>Mais credibilidade</TitleFour>
+      <Section className="border border-4 h-screen flex justify-center items-center flex-col ">
+        <TitleTwo className=" text-3xl text-center font-semibold mb-4" >Presença digital que <span className="text-[#ba93e9]" >gera resultados</span></TitleTwo>
+        <Paragraph className="mb-6" >Se sua empresa não está no digital de forma correta, seus concorrentes estão lucrando no seu lugar! Eu desenvolvo sites que resolvem isso pra você.</Paragraph>
+        <Container className=" flex gap-6 p-2 w-[70%]">
+
+          <Container className="bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7">
+            <TitleFour className="mb-4 text-xl font-semibold" >Mais credibilidade</TitleFour>
             <Paragraph>Seu negócio passa mais confiança e profissionalismo com um site bem estruturado, transmitindo segurança para seus clientes e aumentando suas chances de conversão.</Paragraph>
           </Container>
-          <Container className="border-2 p-7">
-            <TitleFour>Mais clientes</TitleFour>
+          <Container className="bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7">
+            <TitleFour className="mb-4 text-xl font-semibold" >Mais clientes</TitleFour>
             <Paragraph>Um site estratégico atrai visitantes qualificados e os transforma em clientes, funcionando 24 horas por dia para gerar mais oportunidades para o seu negócio.</Paragraph>
           </Container>
-          <Container className="border-2 p-7">
-            <TitleFour>Destaque digital</TitleFour>
+          <Container className="bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7">
+            <TitleFour className="mb-4 text-xl font-semibold" >Destaque digital</TitleFour>
             <Paragraph>com um site profissional, você supera a concorrencia, fortalece sua marca no digital e garante que sua empresa seja encontrada pelos clientes certos.</Paragraph>
           </Container>
-          <Container className="border-2 p-7">
-            <TitleFour>Atendimento rápido</TitleFour>
+          <Container className="bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7">
+            <TitleFour className="mb-4 text-xl font-semibold" >Atendimento rápido</TitleFour>
             <Paragraph>Integre seu site ao seu WhatsApp ou outra redes sociais, tornando a comunicação mais ágil e eficiente, sem perder nenhuma oportunidade de venda.</Paragraph>
           </Container>
         </Container>
       </Section>
 
-      <Section className="border border-4 h-screen flex justify-center items-center flex-col" >
-        <TitleTwo>Meus serviços</TitleTwo>
-        <Container className="flex p-2 gap-2 items-center">
-          <BsCheckCircleFill /> <TitleFour>Sites institucionais</TitleFour>
+      <Section className="border border-4 h-screen flex  items-center flex-col" >
+        <TitleTwo className="text-3xl text-center font-semibold mt-30 mb-15" >Meus serviços</TitleTwo>
+        <Container className="flex gap-2 items-center mb-5">
+          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold text-center" >Sites institucionais</TitleFour>
         </Container>
-        <Container className="flex p-2 gap-2 items-center">
-          <BsCheckCircleFill /> <TitleFour>Landing pagess</TitleFour>
+        <Container className="flex gap-2 items-center mb-5">
+          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Landing pagess</TitleFour>
         </Container>
-        <Container className="flex p-2 gap-2 items-center">
-          <BsCheckCircleFill /> <TitleFour>Portfólios</TitleFour>
+        <Container className="flex gap-2 items-center mb-5">
+          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Portfólios</TitleFour>
         </Container>
-        <Container className="flex p-2 gap-2 items-center">
-          <BsCheckCircleFill /> <TitleFour>E-commerce</TitleFour>
+        <Container className="flex gap-2 items-center mb-5">
+          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >E-commerce</TitleFour>
         </Container>
-        <Container className="flex p-2 gap-2 items-center">
-          <BsCheckCircleFill /> <TitleFour>Blogs profissionais</TitleFour>
+        <Container className="flex gap-2 items-center mb-5">
+          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Blogs profissionais</TitleFour>
         </Container>
       </Section>
 
-      <Section className="border border-4 h-screen flex justify-center items-center flex-col" >
-        <TitleTwo>Benefícios para o cliente</TitleTwo>
-        <Container className="flex p-2 gap-2 items-center">
-          <BsCheckCircleFill /> <TitleFour>Site responsivo para todos os dispositivos</TitleFour>
+      <Section className="border border-4 h-screen flex  items-center flex-col" >
+        <TitleTwo className= "text-3xl text-center font-semibold mt-30 mb-15" >Benefícios para o cliente</TitleTwo>
+        <Container className="flex p-2 gap-2 items-center mb-5">
+          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Site responsivo para todos os dispositivos</TitleFour>
         </Container>
-        <Container className="flex p-2 gap-2 items-center">
-          <BsCheckCircleFill /> <TitleFour>Velocidade e SEO</TitleFour>
+        <Container className="flex p-2 gap-2 items-center mb-5">
+          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Velocidade e SEO</TitleFour>
         </Container>
-        <Container className="flex p-2 gap-2 items-center">
-          <BsCheckCircleFill /> <TitleFour>Design personalizado</TitleFour>
+        <Container className="flex p-2 gap-2 items-center mb-5">
+          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Design personalizado</TitleFour>
         </Container>
-        <Container className="flex p-2 gap-2 items-center">
-          <BsCheckCircleFill /> <TitleFour>Suporte e manutenção</TitleFour>
+        <Container className="flex p-2 gap-2 items-center mb-5">
+          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Suporte e manutenção</TitleFour>
         </Container>
-        <Container className="flex p-2 gap-2 items-center">
-          <BsCheckCircleFill /> <TitleFour>Integração com redes sociais, WhatsApp, etc.</TitleFour>
+        <Container className="flex p-2 gap-2 items-center mb-5">
+          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Integração com redes sociais, WhatsApp, etc.</TitleFour>
         </Container>
       </Section>
 

@@ -6,7 +6,7 @@
   --corum: #2a055b;
 }
 body {
-  @apply bg-gradient-to-r from-[#1E0342] to-[#2a055b] min-h-screen;
+  @apply bg-gradient-to-r from-[#1E0342] to-[#1E0342] min-h-screen;
   color: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
