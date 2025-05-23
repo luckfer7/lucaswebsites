@@ -7,6 +7,7 @@ import { BsCheckCircleFill } from "react-icons/bs"
 import Image from "next/image";
 import Link from "next/link";
 import website from "../../public/pagina-inicial-vista-na-tela-do-computador.png"
+import CarrosselProjetos from "@/componentes/Carousel/ProjectsCarouse";
 
 export default function Home() {
   return (
@@ -88,6 +89,13 @@ export default function Home() {
         </Container>
         <Container className="flex p-2 gap-2 items-center mb-5">
           <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Integração com redes sociais, WhatsApp, etc.</TitleFour>
+        </Container>
+      </Section>
+
+      <Section className="h-screen" >
+        <TitleTwo className="text-3xl text-center font-semibold mt-30 mb-15" >Quer ver meus projetos?</TitleTwo>
+        <Container >
+          <CarrosselProjetos  />
         </Container>
       </Section>
 
