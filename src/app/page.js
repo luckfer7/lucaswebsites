@@ -1,3 +1,4 @@
+
 import Container from "@/componentes/Container";
 import Paragraph from "@/componentes/Paragraph";
 import Section from "@/componentes/Section";
@@ -8,6 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import website from "../../public/pagina-inicial-vista-na-tela-do-computador.png"
 import CarrosselProjetos from "@/componentes/Carousel/ProjectsCarouse";
+
 
 export default function Home() {
   return (
@@ -92,16 +94,19 @@ export default function Home() {
         </Container>
       </Section>
 
+
+
+      
       <Section className="h-screen" >
         <TitleTwo className="text-3xl text-center font-semibold mt-30 mb-15" >Quer ver meus projetos?</TitleTwo>
-        <Container >
-          <CarrosselProjetos  />
+        <Container className='' >
+          <CarrosselProjetos />
         </Container>
       </Section>
 
-      <Section className="h-screen" >
-        <TitleTwo>Vamos criar o seu site dos sonhos?</TitleTwo>
-        <Link href="/">QUERO MEU SITE!</Link> 
+      <Section className="h-screen flex  items-center flex-col mt-40" >
+        <TitleTwo className=" text-3xl font-semibold mb-15" >Vamos criar o seu site dos sonhos?</TitleTwo>
+        <Link className=" bg-[#7046a8] text-white font-semibold px-10 py-2 rounded hover:bg-[#a47ed2] transition cursor-pointer" href="/">QUERO MEU SITE!</Link> 
       </Section>
 
 

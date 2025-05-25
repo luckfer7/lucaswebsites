@@ -3,46 +3,55 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 
-const projetos = [
-  { id: 1, imagem: '/fluentfocus.jpg', titulo: 'FluentFocus' },
-  { id: 2, imagem: '/landingpage.jpg', titulo: 'Landing Page' },
-//   { id: 3, imagem: '/projeto3.png', titulo: 'Projeto 3' },
-];
+
+
 
 export default function CarrosselProjetos() {
-  const [indexAtual, setIndexAtual] = useState(0);
+
+  const projetos = [
+    { id: 1, imagem: '/fluentfocus.jpg', titulo: 'FluentFocus' },
+    { id: 2, imagem: '/landingpage.jpg', titulo: 'Landing Page' },
+    //   { id: 3, imagem: '/projeto3.png', titulo: 'Projeto 3' },
+  ];
+
+  const [indiceAtual, setIndiceAtual] = useState(0)
 
   const proximo = () => {
-    setIndexAtual((indexAtual + 1) % projetos.length);
-  };
+    setIndiceAtual((prev) => (prev + 1) % projetos.length)
+  }
 
   const anterior = () => {
-    setIndexAtual((indexAtual - 1 + projetos.length) % projetos.length);
-  };
+    setIndiceAtual((prev) => (prev - 1 + projetos.length) % projetos.length)
+  }
 
   return (
-    <div className="w-full h-full mx-auto relative">
-      <Image
-        width={250}
-        height={80}
-        src={projetos[indexAtual].imagem}
-        alt={projetos[indexAtual].titulo}
-        className=" mx-auto object-cover rounded-xl shadow-md transition-all duration-300"
-      />
-      <button
-        onClick={anterior}
-        className="absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full"
-      >
-        ‹
-      </button>
-      <button
-        onClick={proximo}
-        className="absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full"
-      >
-        ›
-      </button>
-    </div>
-  );
+        <div className= 'relative w-full h-[300px] overflow-hidden flex items-center justify-center' >
+          {projetos.map((projeto, index) => (
+            <Image 
+              key={projeto.id}
+              alt={projeto.titulo} 
+              src={projeto.imagem}
+              width={200}
+              height={200}
+              className={`absolute transition-opacity duration-500 object-cover ${
+            index === indiceAtual ? 'opacity-100 z-10' : 'opacity-0 z-0'
+          }`}
+            />
+          ))}
+
+           <div className="absolute top-1/2 left-0 right-0 flex justify-between px-4 -translate-y-1/2 z-20" >
+            <button onClick={anterior} >
+                <BsChevronLeft size={40} />
+            </button>
+            <button onClick={proximo} >
+                <BsChevronRight size={40} />
+            </button>
+        </div>
+        </div>
+          
+  )
 }
+
