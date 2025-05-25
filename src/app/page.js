@@ -13,9 +13,9 @@ import CarrosselProjetos from "@/componentes/Carousel/ProjectsCarouse";
 
 export default function Home() {
   return (
-    <div>
-      <Section className=" border border-4 h-screen flex justify-center items-center ">
-        <Container className=" flex max-w-[80%] shadow-md shadow-[#6c4a99] rounded-md p-8 ">
+    <div className="main-container" >
+      <Section className=" border border-4 min-h-screen flex justify-center items-center first-section ">
+        <Container className=" flex max-w-[80%] shadow-md shadow-[#6c4a99] rounded-md p-8  first-container ">
           <Container className=" flex flex-col gap-4 justify-center">
             <TitleTwo className="text-3xl font-semibold ">
               Seu negócio pode estar perdendo <span className="text-[#ba93e9]" >clientes sem você perceber</span>
@@ -26,16 +26,16 @@ export default function Home() {
             </button>
           </Container>
 
-            <Image src={website} className="border-2 w-[55%]"  alt="imagem que eu colocar"/>
+            <Image src={website} className="border-2 w-[55%] img-first "  alt="imagem que eu colocar  "/>
 
 
         </Container>
       </Section>
 
-      <Section className="border border-4 h-screen flex justify-center items-center flex-col ">
+      <Section className="border border-4 min-h-screen flex justify-center items-center flex-col ">
         <TitleTwo className=" text-3xl text-center font-semibold mb-4" >Presença digital que <span className="text-[#ba93e9]" >gera resultados</span></TitleTwo>
         <Paragraph className="mb-6" >Se sua empresa não está no digital de forma correta, seus concorrentes estão lucrando no seu lugar! Eu desenvolvo sites que resolvem isso pra você.</Paragraph>
-        <Container className=" flex gap-6 p-2 w-[70%]">
+        <Container className=" flex gap-6 p-2 w-[70%] second-container ">
 
           <Container className="bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7">
             <TitleFour className="mb-4 text-xl font-semibold" >Mais credibilidade</TitleFour>
