@@ -23,14 +23,28 @@ body {
   }
 
   .first-container {
-    @apply flex-col p-0  max-w-[90%]
+    @apply flex-col  max-w-[90%] gap-10 shadow-none
   }
 
   .img-first {
     @apply hidden
   }
 
+  .container-button {
+    @apply mx-auto
+  }
+
   .second-container {
     @apply flex-col
   }
+
+  .text-second-container {
+    @apply text-center mx-2
+  }
+
+  .last-title {
+    @apply text-center mx-2
+  }
+
+ 
 }
