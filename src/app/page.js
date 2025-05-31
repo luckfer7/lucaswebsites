@@ -21,7 +21,7 @@ export default function Home() {
               Seu negócio pode estar perdendo <span className="text-[#ba93e9]" >clientes sem você perceber</span>
             </TitleTwo>
             <Paragraph className=" text-base ">Garanta uma presença online de alto nível com um site rápido, atrativo e otimizado para converter visitantes e clientes</Paragraph>
-            <Link href="https://wa.me/5521994468609" target="_blank" className="bg-[#7046a8] text-white font-semibold px-4 py-2 rounded hover:bg-[#a47ed2] transition cursor-pointer w-[70%] container-button " >
+            <Link href="https://wa.me/5521994468609" target="_blank" className="bg-[#7046a8] text-white font-semibold px-4 py-2 rounded hover:bg-[#a47ed2] transition cursor-pointer w-[70%] text-center container-button " >
               fazer orçamento gratuito
             </Link>
           </Container>
@@ -76,21 +76,23 @@ export default function Home() {
       </Section>
 
       <Section className=" h-screen flex  items-center flex-col" >
-        <TitleTwo className= "text-3xl text-center font-semibold mt-30 mb-15 " >Benefícios para o cliente</TitleTwo>
-        <Container className="flex p-2 gap-2 items-center mb-5">
-          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold " >Site responsivo para todos os dispositivos</TitleFour>
-        </Container>
-        <Container className="flex p-2 gap-2 items-center mb-5">
-          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Velocidade e SEO</TitleFour>
-        </Container>
-        <Container className="flex p-2 gap-2 items-center mb-5">
-          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Design personalizado</TitleFour>
-        </Container>
-        <Container className="flex p-2 gap-2 items-center mb-5">
-          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Suporte e manutenção</TitleFour>
-        </Container>
-        <Container className="flex p-2 gap-2 items-center mb-5">
-          <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Integração com redes sociais, WhatsApp, etc.</TitleFour>
+        <Container>
+          <TitleTwo className= "text-3xl text-center font-semibold mt-30 mb-15 " >Benefícios para o cliente</TitleTwo>
+          <Container className="flex p-2 gap-2 items-center mb-5">
+            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold " >Site responsivo para todos os dispositivos</TitleFour>
+          </Container>
+          <Container className="flex p-2 gap-2 items-center mb-5">
+            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Velocidade e SEO</TitleFour>
+          </Container>
+          <Container className="flex p-2 gap-2 items-center mb-5">
+            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Design personalizado</TitleFour>
+          </Container>
+          <Container className="flex p-2 gap-2 items-center mb-5">
+            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Suporte e manutenção</TitleFour>
+          </Container>
+          <Container className="flex p-2 gap-2 items-center mb-5">
+            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Integração com redes sociais, WhatsApp, etc.</TitleFour>
+          </Container>
         </Container>
       </Section>
 
