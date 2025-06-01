@@ -46,11 +46,15 @@ export default function CarrosselProjetos() {
 
           ))}
 
-           <div className="absolute top-1/2 left-0 right-0 flex justify-between px-4 -translate-y-1/2 z-20" >
-              <button onClick={anterior} >
+           <div className="absolute top-1/2 left-0 right-0 flex justify-between px-4 -translate-y-1/2 z-20  " >
+              <button 
+                className=' cursor-pointer '
+                onClick={anterior} >
                   <BsChevronLeft size={40} />
               </button>
-              <button onClick={proximo} >
+              <button 
+                className=' cursor-pointer '
+                onClick={proximo} >
                   <BsChevronRight size={40} />
               </button> 
             </div>
@@ -63,7 +67,7 @@ export default function CarrosselProjetos() {
         <div className=' mt-4' >
               <Link 
                 className="text-purple-400 border-1
-                 shadow-[0_0_5px_5px_rgba(235,24,239,0.25)] rounded-lg p-5 text-lg font-medium"
+                 shadow-[0_0_5px_5px_rgba(235,24,239,0.25)] rounded-lg p-5 text-lg font-medium "
                 href={projetos[indiceAtual].url} target="_blank" rel="noopener noreferrer">
                 {projetos[indiceAtual].titulo}
               </Link>

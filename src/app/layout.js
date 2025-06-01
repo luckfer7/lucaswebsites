@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, Raleway } from "next/font/google";
 import "./globals.css";
+import AOSInitializer from "@/componentes/AosInitializer";
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${raleway.variable} antialiased`}
       >
+        <AOSInitializer />
         {children}
       </body>
     </html>
