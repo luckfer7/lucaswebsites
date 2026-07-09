@@ -66,27 +66,23 @@ export default function Home() {
       <Section data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom" className=" h-screen flex  items-center flex-col" >
         <TitleTwo className="text-3xl text-center font-semibold mt-30 mb-15" >Meus serviços</TitleTwo>
-        <Container className="grid grid-cols-4" >
+        <Container className="grid grid-cols-4 w-[70%] gap-6 p-2 " >
 
         
-          <Container className="flex gap-2 items-center mb-5">
-            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold text-center" >Sites institucionais</TitleFour>
-            <Paragraph>Ideal para empresas que querem transmitir confiança e conquistar novos clientes. [Saber mais]</Paragraph>
+          <Container className="flex gap-2 flex-col mb-5 bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7 ">
+             <TitleFour className=" text-xl font-semibold " >Sites institucionais</TitleFour>
+            <Paragraph className="text-left">Ideal para empresas que querem transmitir confiança e conquistar novos clientes. [Saber mais]</Paragraph>
           </Container>
-          <Container className="flex gap-2 items-center mb-5">
-            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Landing pagess</TitleFour>
+          <Container className="flex flex-col gap-2 mb-5 bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7 ">
+             <TitleFour className=" text-xl text-left font-semibold" >Landing pages</TitleFour>
             <Paragraph>Páginas focadas em campanhas e geração de leads para aumentar vendas.</Paragraph>
           </Container>
-          {/* <Container className="flex gap-2 items-center mb-5">
-            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Portfólios</TitleFour>
-            <Paragraph>Ideal para empresas que querem transmitir confiança e conquistar novos clientes. [Saber mais]</Paragraph>
-          </Container> */}
-          <Container className="flex gap-2 items-center mb-5">
-            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >E-commerce</TitleFour>
+          <Container className="flex flex-col gap-2 mb-5 bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7 ">
+             <TitleFour className=" text-xl font-semibold" >E-commerce</TitleFour>
             <Paragraph>Venda seus produtos 24 horas por dia com uma loja virtual moderna.</Paragraph>
           </Container>
-          <Container className="flex gap-2 items-center mb-5">
-            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Portfólio Profissional</TitleFour>
+          <Container className="flex flex-col gap-2  mb-5 bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7 ">
+             <TitleFour className=" text-xl font-semibold" >Portfólio Profissional</TitleFour>
             <Paragraph>Para profissionais liberais, designers, arquitetos, fotógrafos etc.</Paragraph>
           </Container>
         </Container>
