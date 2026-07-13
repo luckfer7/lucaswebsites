@@ -91,20 +91,27 @@ export default function Home() {
       <Section data-aos="fade-up-right" className=" h-screen flex  items-center flex-col fourth-section " >
         <Container className=" " >
           <TitleTwo className= "text-3xl text-center font-semibold mt-30 mb-15 fourth-section--title " >Benefícios para o cliente</TitleTwo>
-          <Container className="flex p-2 gap-2 items-center mb-5">
-            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold " >Site responsivo para todos os dispositivos</TitleFour>
-          </Container>
-          <Container className="flex p-2 gap-2 items-center mb-5">
-            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Velocidade e SEO</TitleFour>
-          </Container>
-          <Container className="flex p-2 gap-2 items-center mb-5">
-            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Design personalizado</TitleFour>
-          </Container>
-          <Container className="flex p-2 gap-2 items-center mb-5">
-            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Suporte e manutenção</TitleFour>
-          </Container>
-          <Container className="flex p-2 gap-2 items-center mb-5">
-            <BsCheckCircleFill /> <TitleFour className=" text-xl font-semibold" >Integração com redes sociais, WhatsApp, etc.</TitleFour>
+          <Container className="grid grid-cols-3 mx-auto w-[70%] gap-6 p-2" >
+            <Container className="flex flex-col bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-2 gap-2  mb-5">
+              <TitleFour className=" text-xl font-semibold " >Site responsivo para todos os dispositivos</TitleFour>
+              <Paragraph>Seu site funciona perfeitamente em celulares, tablets e computadores.</Paragraph>
+            </Container>
+            <Container className="flex flex-col bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-2 gap-2 mb-5">
+              <TitleFour className=" text-xl font-semibold" >Velocidade e SEO</TitleFour>
+              <Paragraph>Mais chances de aparecer no Google quando alguém procurar pelo seu serviço.</Paragraph>
+            </Container>
+            <Container className="flex flex-col bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-2 gap-2  mb-5">
+              <TitleFour className=" text-xl font-semibold" >Design personalizado</TitleFour>
+              <Paragraph>Um visual exclusivo que transmite confiança e fortalece sua marca.</Paragraph>
+            </Container>
+            <Container className="flex flex-col bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-2 gap-2 mb-5">
+              <TitleFour className=" text-xl font-semibold" >Suporte e manutenção</TitleFour>
+              <Paragraph>Você não fica sozinho depois da entrega.</Paragraph>
+            </Container>
+            <Container className="flex flex-col bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-2 gap-2 mb-5">
+              <TitleFour className=" text-xl font-semibold" >Integração com redes sociais, WhatsApp, etc.</TitleFour>
+              <Paragraph>Seus clientes entram em contato com apenas um clique.</Paragraph>
+            </Container>
           </Container>
         </Container>
       </Section>
