@@ -64,51 +64,54 @@ export default function Home() {
       </Section>
 
       <Section data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" className=" h-screen flex  items-center flex-col" >
-        <TitleTwo className="text-3xl text-center font-semibold mt-30 mb-15" >Meus serviços</TitleTwo>
-        <Container className="grid grid-cols-4 w-[70%] gap-6 p-2 " >
+        data-aos-anchor-placement="bottom-bottom" 
+        className=" min-h-screen flex flex-col items-center py-20 px-5 " >
+        <TitleTwo className="text-3xl md:text-4xl text-center font-semibold mb-14" >Meus serviços</TitleTwo>
+        <Container className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4  w-full max-w-7xl gap-6 p-2 " >
 
         
-          <Container className="flex gap-2 flex-col mb-5 bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7 ">
+          <Container className="flex flex-col gap-4 bg-[#280458] p-7 rounded-xl shadow-md shadow-[#280458] hover:bg-[#ba93e9] transition duration-300">
              <TitleFour className=" text-xl font-semibold " >Sites institucionais</TitleFour>
             <Paragraph className="text-left">Ideal para empresas que querem transmitir confiança e conquistar novos clientes. [Saber mais]</Paragraph>
           </Container>
-          <Container className="flex flex-col gap-2 mb-5 bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7 ">
+          <Container className="flex flex-col gap-4 bg-[#280458] p-7 rounded-xl shadow-md shadow-[#280458] hover:bg-[#ba93e9] transition duration-300">
              <TitleFour className=" text-xl text-left font-semibold" >Landing pages</TitleFour>
             <Paragraph>Páginas focadas em campanhas e geração de leads para aumentar vendas.</Paragraph>
           </Container>
-          <Container className="flex flex-col gap-2 mb-5 bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7 ">
+          <Container className="flex flex-col gap-4 bg-[#280458] p-7 rounded-xl shadow-md shadow-[#280458] hover:bg-[#ba93e9] transition duration-300">
              <TitleFour className=" text-xl font-semibold" >E-commerce</TitleFour>
             <Paragraph>Venda seus produtos 24 horas por dia com uma loja virtual moderna.</Paragraph>
           </Container>
-          <Container className="flex flex-col gap-2  mb-5 bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-7 ">
+          <Container className="flex flex-col gap-4 bg-[#280458] p-7 rounded-xl shadow-md shadow-[#280458] hover:bg-[#ba93e9] transition duration-300">
              <TitleFour className=" text-xl font-semibold" >Portfólio Profissional</TitleFour>
             <Paragraph>Para profissionais liberais, designers, arquitetos, fotógrafos etc.</Paragraph>
           </Container>
         </Container>
       </Section>
 
-      <Section data-aos="fade-up-right" className=" h-screen flex  items-center flex-col fourth-section " >
+      <Section 
+        data-aos="fade-up-right" 
+        className="min-h-screen flex flex-col items-center py-20 px-5" >
         <Container className=" " >
-          <TitleTwo className= "text-3xl text-center font-semibold mt-30 mb-15 fourth-section--title " >Benefícios para o cliente</TitleTwo>
-          <Container className="grid grid-cols-3 mx-auto w-[70%] gap-6 p-2" >
-            <Container className="flex flex-col bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-2 gap-2  mb-5">
+          <TitleTwo className= "text-3xl md:text-4xl text-center font-semibold mb-14 fourth-section--title " >Benefícios para o cliente</TitleTwo>
+          <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl" >
+            <Container className="flex flex-col gap-4 bg-[#280458] p-7 rounded-xl shadow-md shadow-[#280458] hover:bg-[#ba93e9] transition duration-300">
               <TitleFour className=" text-xl font-semibold " >Site responsivo para todos os dispositivos</TitleFour>
               <Paragraph>Seu site funciona perfeitamente em celulares, tablets e computadores.</Paragraph>
             </Container>
-            <Container className="flex flex-col bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-2 gap-2 mb-5">
+            <Container className="flex flex-col gap-4 bg-[#280458] p-7 rounded-xl shadow-md shadow-[#280458] hover:bg-[#ba93e9] transition duration-300">
               <TitleFour className=" text-xl font-semibold" >Velocidade e SEO</TitleFour>
               <Paragraph>Mais chances de aparecer no Google quando alguém procurar pelo seu serviço.</Paragraph>
             </Container>
-            <Container className="flex flex-col bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-2 gap-2  mb-5">
+            <Container className="flex flex-col gap-4 bg-[#280458] p-7 rounded-xl shadow-md shadow-[#280458] hover:bg-[#ba93e9] transition duration-300">
               <TitleFour className=" text-xl font-semibold" >Design personalizado</TitleFour>
               <Paragraph>Um visual exclusivo que transmite confiança e fortalece sua marca.</Paragraph>
             </Container>
-            <Container className="flex flex-col bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-2 gap-2 mb-5">
+            <Container className="flex flex-col gap-4 bg-[#280458] p-7 rounded-xl shadow-md shadow-[#280458] hover:bg-[#ba93e9] transition duration-300">
               <TitleFour className=" text-xl font-semibold" >Suporte e manutenção</TitleFour>
               <Paragraph>Você não fica sozinho depois da entrega.</Paragraph>
             </Container>
-            <Container className="flex flex-col bg-[#280458] p-4 shadow-md shadow-[#280458] rounded-md hover:bg-[#ba93e9] p-2 gap-2 mb-5">
+            <Container className="flex flex-col gap-4 bg-[#280458] p-7 rounded-xl shadow-md shadow-[#280458] hover:bg-[#ba93e9] transition duration-300">
               <TitleFour className=" text-xl font-semibold" >Integração com redes sociais, WhatsApp, etc.</TitleFour>
               <Paragraph>Seus clientes entram em contato com apenas um clique.</Paragraph>
             </Container>
@@ -126,11 +129,75 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section className="h-screen flex  items-center flex-col mt-40" >
-        <TitleTwo className=" text-3xl font-semibold mb-15 last-title " >Vamos criar o seu site dos sonhos?</TitleTwo>
-        <Link className=" bg-[#7046a8] text-white font-semibold px-10 py-2 rounded hover:bg-[#a47ed2] cursor-pointer 
-        transition delay-150 duration-300 ease-in-out
-        hover:-translate-y-1 hover:scale-110 " href="https://wa.me/5521994468609" target="_blank">QUERO MEU SITE!</Link> 
+      <Section className="py-24 px-5">
+
+        <Container
+          className="
+            max-w-6xl
+            mx-auto
+            rounded-3xl
+            bg-gradient-to-r
+            from-[#280458]
+            via-[#4a2685]
+            to-[#7046a8]
+            p-10
+            md:p-16
+            shadow-[0_20px_60px_rgba(112,70,168,0.35)]
+          "
+        >
+
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+
+            <div className="max-w-2xl">
+
+              <span className="uppercase tracking-[3px] text-purple-200 text-sm font-semibold">
+                Pronto para crescer?
+              </span>
+
+              <TitleTwo className="text-4xl md:text-5xl font-bold mt-4 mb-6 leading-tight">
+                Seu próximo cliente pode estar procurando pelo seu negócio agora.
+              </TitleTwo>
+
+              <Paragraph className="text-lg text-gray-200 leading-8">
+                Vamos desenvolver um site moderno, rápido e pensado para transmitir
+                confiança, fortalecer sua marca e transformar visitantes em clientes.
+              </Paragraph>
+
+            </div>
+
+           
+
+            <div className="flex flex-col gap-6 items-center">
+
+              <Link
+                href="https://wa.me/5521994468609"
+                target="_blank"
+                className="
+                  bg-white
+                  text-[#280458]
+                  font-bold
+                  px-10
+                  py-4
+                  rounded-xl
+                  hover:scale-105
+                  hover:bg-gray-100
+                  duration-300
+                  shadow-lg
+                "
+              >
+                Solicitar orçamento gratuito
+              </Link>
+
+              <p className="text-sm text-gray-200">
+                💬 Resposta rápida pelo WhatsApp
+              </p>
+
+            </div>
+
+          </div>
+
+        </Container>
+
       </Section>
 
 

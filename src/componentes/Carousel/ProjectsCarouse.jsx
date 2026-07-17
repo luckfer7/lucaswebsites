@@ -110,7 +110,7 @@ export default function CarrosselProjetos() {
 
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8">
+            <div className="grid lg:grid-cols-3 gap-8 p-6">
 
                 {projetos
                 .slice(inicio,inicio+mostrar)
